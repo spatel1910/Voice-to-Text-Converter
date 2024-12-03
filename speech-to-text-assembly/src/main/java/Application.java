@@ -6,8 +6,7 @@ import javax.sound.sampled.*;
 public class Application {
 
     public static void main(String[] args) throws Exception {
-        // Initialize Vosk
-        //Vosk.setLogLevel(0); // Suppress logs
+
         String modelPath = "C:\\Users\\Patel-Ji\\vosk-model-small-en-us-0.15"; // Replace with your model path
         Model model = new Model(modelPath); // Load the model
         Recognizer recognizer = new Recognizer(model, 16000); // 16kHz sample rate
